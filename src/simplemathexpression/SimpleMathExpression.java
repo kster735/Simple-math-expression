@@ -44,7 +44,7 @@ public class SimpleMathExpression {
         ArrayList<String> explist = new ArrayList<>();
         String num = "";
         for (char c : expression.toCharArray()) {
-            if (Character.isDigit(c)) {
+            if (Character.isDigit(c) || c == '.' ) {
                 num += c;
             } else if (symbols.contains(c)) {
                 explist.add(num);
